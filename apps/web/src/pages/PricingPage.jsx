@@ -27,7 +27,7 @@ const PricingPage = () => {
       name: 'STRUCTURE',
       icon: <Layers className="w-8 h-8 text-blue-500" />,
       price: '₹29,999',
-      period: '/month',
+      period: '/year',
       problem: 'You are running on Excel and WhatsApp. Things are falling through the cracks.',
       description: 'Escape the spreadsheets. Establish basic operational sanity.',
       features: [
@@ -48,7 +48,7 @@ const PricingPage = () => {
       name: 'CONTROL',
       icon: <Shield className="w-8 h-8 text-indigo-500" />,
       price: '₹59,999',
-      period: '/month',
+      period: '/year',
       problem: 'You have process, but it requires constant manual enforcement and micromanagement.',
       description: 'Automate workflows and gain total visibility.',
       features: [
@@ -93,7 +93,7 @@ const PricingPage = () => {
       name: 'AI AGENTS',
       icon: <Bot className="w-8 h-8 text-emerald-500" />,
       price: '+ ₹39,999',
-      period: '/month',
+      period: '/year',
       problem: 'Your team is drowning in repetitive customer queries and slow lead responses.',
       description: 'Deploy digital executives for 24/7 sales and support.',
       features: [
@@ -125,10 +125,10 @@ const PricingPage = () => {
   ];
 
   const addons = [
-    { title: 'Additional Team Members', price: '₹2,000/user/mo', desc: 'Scale your team seamlessly as you grow.' },
-    { title: 'White-label Client Portal', price: '₹10,000/mo', desc: 'Give your clients a branded self-service experience.' },
-    { title: 'Custom API Access', price: '₹15,000/mo', desc: 'Connect Avyron to your proprietary internal tools.' },
-    { title: 'Priority Support SLA', price: '₹20,000/mo', desc: '1-hour response times and dedicated phone support.' },
+    { title: 'Additional Team Members', price: '₹2,000/user/yr', desc: 'Scale your team seamlessly as you grow.' },
+    { title: 'White-label Client Portal', price: '₹10,000/yr', desc: 'Give your clients a branded self-service experience.' },
+    { title: 'Custom API Access', price: '₹15,000/yr', desc: 'Connect Avyron to your proprietary internal tools.' },
+    { title: 'Priority Support SLA', price: '₹20,000/yr', desc: '1-hour response times and dedicated phone support.' },
   ];
 
   return (
