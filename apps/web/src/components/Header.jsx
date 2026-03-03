@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import avyronLogo from '@/avyron-logo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +42,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src="https://horizons-cdn.hostinger.com/27736afe-ba8c-4a17-9b1a-215c3531f392/10946e2b26b057a4e9808e43ddacc8f4.png" 
+              src={avyronLogo}
               alt="Avyron Logo" 
               className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
             />
