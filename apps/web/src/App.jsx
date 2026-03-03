@@ -1,21 +1,24 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import ScrollToTop from '@/components/ScrollToTop.jsx';
-import Header from '@/components/Header.jsx';
-import Footer from '@/components/Footer.jsx';
-import HomePage from '@/pages/HomePage.jsx';
-import ProductPage from '@/pages/ProductPage.jsx';
-import AIAgentsPage from '@/pages/AIAgentsPage.jsx';
-import PricingPage from '@/pages/PricingPage.jsx';
-import BookDemoPage from '@/pages/BookDemoPage.jsx';
-import ContactPage from '@/pages/ContactPage.jsx';
-import AboutPage from '@/pages/AboutPage.jsx';
-import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage.jsx';
-import TermsOfUsePage from '@/pages/TermsOfUsePage.jsx';
-import SecurityPage from '@/pages/SecurityPage.jsx';
-import CareersPage from '@/pages/CareersPage.jsx';
-import { Toaster } from '@/components/ui/toaster.jsx';
+
+import ScrollToTop from './components/ScrollToTop.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+
+import HomePage from './pages/HomePage.jsx';
+import ProductPage from './pages/ProductPage.jsx';
+import AIAgentsPage from './pages/AIAgentsPage.jsx';
+import PricingPage from './pages/PricingPage.jsx';
+import BookDemoPage from './pages/BookDemoPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx';
+import TermsOfUsePage from './pages/TermsOfUsePage.jsx';
+import SecurityPage from './pages/SecurityPage.jsx';
+import CareersPage from './pages/CareersPage.jsx';
+
+import { Toaster } from './components/ui/toaster.jsx';
 
 function App() {
   return (
