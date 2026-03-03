@@ -59,7 +59,7 @@ const Footer = () => {
               <img 
                 src={avyronLogo}
                 alt="Avyron Logo" 
-                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 brightness-0 invert" 
               />
             </Link>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed text-sm">
