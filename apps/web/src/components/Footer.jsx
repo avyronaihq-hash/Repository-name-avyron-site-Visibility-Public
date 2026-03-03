@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Instagram, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
+import avyronLogo from '@/avyron-logo.png';
 
 const Footer = () => {
   const footerSections = [
@@ -46,7 +47,6 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-indigo-950 to-violet-950 text-white overflow-hidden">
-      {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-indigo-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-violet-500 rounded-full blur-3xl"></div>
@@ -54,21 +54,18 @@ const Footer = () => {
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-          {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-3 mb-6 group">
               <img 
-                src="https://horizons-cdn.hostinger.com/27736afe-ba8c-4a17-9b1a-215c3531f392/10946e2b26b057a4e9808e43ddacc8f4.png" 
+                src={avyronLogo}
                 alt="Avyron Logo" 
-                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 brightness-0 invert" 
+                className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
             </Link>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed text-sm">
               Operational Control Infrastructure for High-Growth Tour Operators. 
               Transform chaos into clarity with AI-powered command systems.
             </p>
-            
-            {/* Social Links */}
             <div className="flex space-x-3 mb-8">
               {socialLinks.map(social => (
                 <motion.a 
@@ -85,8 +82,6 @@ const Footer = () => {
                 </motion.a>
               ))}
             </div>
-
-            {/* Trust Badges */}
             <div className="grid grid-cols-2 gap-3">
               {trustBadges.map((badge, index) => (
                 <motion.div 
@@ -103,7 +98,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Footer Links */}
           {footerSections.map((section, sectionIndex) => (
             <motion.div 
               key={section.title} 
@@ -111,16 +105,11 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }} 
               transition={{ delay: sectionIndex * 0.1 }}
             >
-              <span className="text-lg font-semibold mb-4 block text-white">
-                {section.title}
-              </span>
+              <span className="text-lg font-semibold mb-4 block text-white">{section.title}</span>
               <ul className="space-y-3">
                 {section.links.map(link => (
                   <li key={link.path}>
-                    <Link 
-                      to={link.path} 
-                      className="text-gray-300 hover:text-white transition-colors duration-300 text-sm inline-block hover:translate-x-1 transition-transform"
-                    >
+                    <Link to={link.path} className="text-gray-300 hover:text-white transition-colors duration-300 text-sm inline-block hover:translate-x-1 transition-transform">
                       {link.name}
                     </Link>
                   </li>
@@ -130,15 +119,10 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Avyron. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-sm text-center md:text-right">
-              Built for tour operators who refuse to scale on spreadsheets.
-            </p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Avyron. All rights reserved.</p>
+            <p className="text-gray-400 text-sm text-center md:text-right">Built for tour operators who refuse to scale on spreadsheets.</p>
           </div>
         </div>
       </div>
