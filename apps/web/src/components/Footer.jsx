@@ -35,7 +35,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Youtube, href: 'https://www.youtube.com/@avyronai', label: 'YouTube' },
-    { icon: Instagram, href: 'https://www.instagram.com/avyron.ai', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/avyronai', label: 'Instagram' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/avyronai', label: 'LinkedIn' }
   ];
 
@@ -131,3 +131,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
